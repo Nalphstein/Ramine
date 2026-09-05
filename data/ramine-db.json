@@ -1,0 +1,238 @@
+{
+  "user": {
+    "id": "usr_default",
+    "email": "samuel.adeyemi@example.com",
+    "currency": "NGN",
+    "created_at": "2026-06-01T08:00:00Z"
+  },
+  "income_sources": [
+    {
+      "id": "inc_1",
+      "user_id": "usr_default",
+      "label": "Primary Tech Salary",
+      "expected_amount": 38000000,
+      "pay_day_of_month": 25,
+      "active": true,
+      "origin": "told"
+    },
+    {
+      "id": "inc_2",
+      "user_id": "usr_default",
+      "label": "Monthly Transport & Remote Stipend",
+      "expected_amount": 7000000,
+      "pay_day_of_month": 28,
+      "active": true,
+      "origin": "told"
+    }
+  ],
+  "fixed_costs": [
+    {
+      "id": "fc_1",
+      "user_id": "usr_default",
+      "label": "Apartment Rent & Estate Service Charge",
+      "category": "Housing",
+      "amount_ceiling": 150000000,
+      "amount_typical": 150000000,
+      "frequency": "yearly",
+      "is_variable": false,
+      "notes": "Payable annually in November. Normalised to ₦125,000/mo.",
+      "active": true,
+      "origin": "told"
+    },
+    {
+      "id": "fc_2",
+      "user_id": "usr_default",
+      "label": "Electricity & Generator Fuel",
+      "category": "Utilities",
+      "amount_ceiling": 5500000,
+      "amount_typical": 3800000,
+      "frequency": "monthly",
+      "is_variable": true,
+      "notes": "Varies with grid supply and national tariff bands.",
+      "active": true,
+      "origin": "told"
+    },
+    {
+      "id": "fc_3",
+      "user_id": "usr_default",
+      "label": "Daily Commute / Ride-Hailing",
+      "category": "Transport",
+      "amount_ceiling": 250000,
+      "amount_typical": 180000,
+      "frequency": "daily",
+      "is_variable": true,
+      "notes": "Daily office commute 3 days a week plus weekend runs.",
+      "active": true,
+      "origin": "told"
+    },
+    {
+      "id": "fc_4",
+      "user_id": "usr_default",
+      "label": "Weekly Foodstuff & Groceries",
+      "category": "Food",
+      "amount_ceiling": 2200000,
+      "amount_typical": 1700000,
+      "frequency": "weekly",
+      "is_variable": true,
+      "notes": "Local market shopping every Saturday.",
+      "active": true,
+      "origin": "told"
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal_1",
+      "user_id": "usr_default",
+      "label": "3-Month Living Emergency Buffer",
+      "type": "buffer",
+      "target_amount": 90000000,
+      "allocated_amount": 65000000,
+      "status": "active",
+      "origin": "inferred"
+    },
+    {
+      "id": "goal_2",
+      "user_id": "usr_default",
+      "label": "Work Laptop Replacement",
+      "type": "dated",
+      "target_amount": 75000000,
+      "target_date": "2027-02-28",
+      "allocated_amount": 20000000,
+      "status": "active",
+      "origin": "told"
+    },
+    {
+      "id": "goal_3",
+      "user_id": "usr_default",
+      "label": "Family Holiday in Obudu",
+      "type": "someday",
+      "target_amount": 50000000,
+      "allocated_amount": 5000000,
+      "status": "active",
+      "origin": "told"
+    }
+  ],
+  "savings_pool": {
+    "id": "pool_1",
+    "user_id": "usr_default",
+    "total_amount": 95000000,
+    "updated_at": "2026-08-30T10:00:00Z",
+    "origin": "told"
+  },
+  "commitments": [
+    {
+      "id": "comm_1",
+      "user_id": "usr_default",
+      "label": "Monthly Vault Savings (Flexible)",
+      "amount": 5000000,
+      "kind": "saving",
+      "is_locked": false,
+      "started_on": "2026-01-01",
+      "review_on": "2026-12-31",
+      "active": true,
+      "origin": "told"
+    },
+    {
+      "id": "comm_2",
+      "user_id": "usr_default",
+      "label": "Fixed Deposit Lock (Car insurance & repair reserve)",
+      "amount": 2500000,
+      "kind": "saving",
+      "is_locked": true,
+      "started_on": "2026-03-01",
+      "review_on": "2026-09-30",
+      "active": true,
+      "origin": "told"
+    }
+  ],
+  "checkins": [
+    {
+      "id": "chk_1",
+      "user_id": "usr_default",
+      "income_source_id": "inc_1",
+      "period_month": "2026-07",
+      "expected_amount": 45000000,
+      "actual_amount": 45000000,
+      "received_on": "2026-07-25",
+      "is_full_month": true,
+      "planned_saving": 7500000,
+      "actual_saving": 7500000,
+      "note": "Salary received in full on Friday afternoon. Automated transfer saved.",
+      "origin": "told"
+    },
+    {
+      "id": "chk_2",
+      "user_id": "usr_default",
+      "income_source_id": "inc_1",
+      "period_month": "2026-08",
+      "expected_amount": 45000000,
+      "actual_amount": 45000000,
+      "received_on": "2026-08-25",
+      "is_full_month": true,
+      "planned_saving": 7500000,
+      "actual_saving": 6000000,
+      "note": "Saved ₦60k instead of ₦75k due to urgent medical bill.",
+      "origin": "told"
+    }
+  ],
+  "leak_notes": [
+    {
+      "id": "leak_1",
+      "user_id": "usr_default",
+      "period_month": "2026-08",
+      "amount": 1500000,
+      "label": "Generator repair",
+      "origin": "told"
+    },
+    {
+      "id": "leak_2",
+      "user_id": "usr_default",
+      "period_month": "2026-08",
+      "amount": 2000000,
+      "label": "Family contribution",
+      "origin": "told"
+    }
+  ],
+  "memory_facts": [
+    {
+      "id": "mem_1",
+      "entity_type": "income",
+      "entity_id": "inc_1",
+      "label": "Tech Salary (₦380,000)",
+      "summary": "Expected on the 25th of every month",
+      "origin": "told",
+      "explanation": "You told Ramine during onboarding that your primary employment contract pays on the 25th.",
+      "created_at": "2026-06-01T08:00:00Z"
+    },
+    {
+      "id": "mem_2",
+      "entity_type": "fixed_cost",
+      "entity_id": "fc_1",
+      "label": "Rent & Service Charge (₦1.5m / yr)",
+      "summary": "Normalised to ₦125,000 monthly",
+      "origin": "told",
+      "explanation": "You recorded your annual apartment lease payment due in November.",
+      "created_at": "2026-06-01T08:15:00Z"
+    },
+    {
+      "id": "mem_3",
+      "entity_type": "goal",
+      "entity_id": "goal_1",
+      "label": "3-Month Emergency Buffer (₦900,000)",
+      "summary": "Derived as ~3 months of typical normalised living costs",
+      "origin": "inferred",
+      "explanation": "Ramine inferred this ₦900k target by multiplying your monthly normalised fixed costs (~₦290k) by 3 months to safeguard against job disruptions.",
+      "created_at": "2026-06-01T08:20:00Z"
+    },
+    {
+      "id": "mem_4",
+      "entity_type": "commitment",
+      "entity_id": "comm_2",
+      "label": "Fixed Deposit Lock (₦25,000)",
+      "summary": "Locked commitment carrying early withdrawal penalty",
+      "origin": "told",
+      "explanation": "You marked this commitment as locked with your banking provider.",
+      "created_at": "2026-06-01T08:30:00Z"
+    }
+  ]
+}

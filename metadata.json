@@ -1,0 +1,6 @@
+{
+  "name": "Ramine",
+  "description": "Salary cash flow planner, goal tracker, and monthly check-in tool for steady income earners",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
